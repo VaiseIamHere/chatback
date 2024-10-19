@@ -3,7 +3,7 @@ import cors from "cors"
 import chat from "./chat.js"
 
 const app = express()
-app.use(cors())
+app.use(cors({origin: "https://chatbot-datahack-847s.vercel.app"}))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}))
 
